@@ -12,7 +12,6 @@ from tensorflow.keras.optimizers import Adamax
 from tensorflow.keras.metrics import Precision, Recall
 # use gemini to produce insights
 import google.generativeai as genai
-from google.colab import userdata
 import PIL.Image
 import os
 from dotenv import load_dotenv
