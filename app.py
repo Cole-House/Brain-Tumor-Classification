@@ -17,7 +17,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # define a directory where we can store the saliency maps. folder within the colab environment
 output_dir = 'saliency_maps'
