@@ -190,30 +190,30 @@ if uploaded_file is not None:
   # Adding some final UI data visualizations
   st.write("## Classification Results")
 
-  result_container = st.container()
-  result_container = st.container()
-  result_container.markdown(
-      f"""
+  # result_container = st.container()
+  # result_container = st.container()
+  # result_container.markdown(
+  #     f"""
       
         
           
-            Prediction
+  #           Prediction
             
-              {result}
+  #             {result}
             
           
           
           
-            Confidence
+  #           Confidence
             
-              {prediction[0][class_index]:.4%}
+  #             {prediction[0][class_index]:.4%}
             
           
         
       
-       """,
-      unsafe_allow_html=True
-  )
+  #      """,
+  #     unsafe_allow_html=True
+  # )
   # Prepare data for Plotly chart
   probabilities = prediction[0]
   sorted_indices = np.argsort(probabilities)[::-1]
