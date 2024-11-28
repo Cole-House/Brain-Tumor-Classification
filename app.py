@@ -154,10 +154,10 @@ if uploaded_file is not None:
   )
 
   if selected_model == "Transfer Learning - Xception":
-    model = load_xception_model('/content/xception_model.weights.h5')
+    model = load_xception_model('xception_model.weights.h5')
     img_size = (299, 299)
   else:
-    model = load_model('/content/cnn_model.h5')
+    model = load_model('cnn_model.h5')
     img_size = (224, 224)
 
   labels = ["Glioma", "Meningioma", "No tumor", "Pituitary"]
@@ -262,3 +262,7 @@ if uploaded_file is not None:
   )
   explanation = generate_explanation(saliency_map_path, result, prediction[0][class_index], explanation_type)
   st.write(explanation)
+
+  del model
+  gc.collect()
+  tf.keras.backend.clear_session()
