@@ -15,7 +15,7 @@ This repository contains a Streamlit-based web application designed for classify
 • Leveraged metrics such as accuracy, precision, recall, F1-score, and confusion matrices for comprehensive evaluation of models.
 - **Web Interface**: Developed an intuitive and lightweight interface using Streamlit for seamless user interaction.
 
-![Demo of App](https://www.youtube.com/watch?v=icIuwp4Z8HI)
+[Demo of App](https://www.youtube.com/watch?v=icIuwp4Z8HI)
 
 ## How: Quick Start Guide
 
